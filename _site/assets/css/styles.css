@@ -40,12 +40,21 @@
 
 .content-container {
   margin-left: 22rem;
-  margin-top: 4rem;
-  background-color: white; }
+  margin-right: 4rem;
+  padding-top: 4rem;
+  background-color: white;
+  max-width: 38rem; }
 
 .post-title {
+  font-size: 20px; }
+
+.post-title-a {
   text-decoration: none;
-  color: green; }
+  color: green;
+  font-size: 20px; }
+
+.page-title {
+  margin-top: 0; }
 
 html {
   font-size: 20px; }
@@ -55,4 +64,9 @@ body {
   padding: 0; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: NanumGothic; }
+
+@font-face {
+  font-family: NanumGothicLight;
+  src: url(/assets/font/NanumSquareRoundR.ttf); }

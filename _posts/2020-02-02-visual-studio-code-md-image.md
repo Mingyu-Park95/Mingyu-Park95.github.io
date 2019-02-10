@@ -1,4 +1,5 @@
 ---
+author: park
 layout: post
 title:  "visual studio code preview에 이미지가 적용되지 않을 때"
 date:   2019-02-01 08:39:50 +0900

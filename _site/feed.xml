@@ -1,42 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-08T21:21:19+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Bananaasfs 복사본</title><link href="http://localhost:4000/2019/02/03/bananaasfs-%EB%B3%B5%EC%82%AC%EB%B3%B8.html" rel="alternate" type="text/html" title="Bananaasfs   복사본" /><published>2019-02-03T00:00:00+09:00</published><updated>2019-02-03T00:00:00+09:00</updated><id>http://localhost:4000/2019/02/03/bananaasfs%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/2019/02/03/bananaasfs-%EB%B3%B5%EC%82%AC%EB%B3%B8.html">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
-
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</summary></entry><entry><title type="html">Bananaasfs</title><link href="http://localhost:4000/2019/02/03/bananaasfs.html" rel="alternate" type="text/html" title="Bananaasfs" /><published>2019-02-03T00:00:00+09:00</published><updated>2019-02-03T00:00:00+09:00</updated><id>http://localhost:4000/2019/02/03/bananaasfs</id><content type="html" xml:base="http://localhost:4000/2019/02/03/bananaasfs.html">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
-
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</summary></entry><entry><title type="html">Git이란, Git 로컬저장소의 구조</title><link href="http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state-%EB%B3%B5%EC%82%AC%EB%B3%B8.html" rel="alternate" type="text/html" title="Git이란, Git 로컬저장소의 구조" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state-%EB%B3%B5%EC%82%AC%EB%B3%B8.html">&lt;h2 id=&quot;1git-이란&quot;&gt;1.Git 이란&lt;/h2&gt;
-&lt;p&gt;프로그램의 버전 관리를 위해 만들어진 S/W입니다. 학교 과제나 개인 프로젝트를 할 때&lt;br /&gt;
-변경 사항을 기록하거나 백업을 위해 프로젝트 폴더 전체를 복사하는 경우가 있습니다.&lt;br /&gt;
-이 경우 폴더의 용량이 큰 경우 상당한 시간이 걸리며, 중복되는 코드가 다시 복사 되기도&lt;br /&gt;
-합니다 Git은 이러한 문제를 해결합니다.&lt;/p&gt;
-
-&lt;p&gt;또한 Git은 &lt;strong&gt;협업에&lt;/strong&gt; 도움을 줍니다.
-학과 프로젝트 도중에 에브리타임을 모방한 앱을 만든적이 있습니다.&lt;br /&gt;
-우선 메인 화면을 만들고 저는 시간표, 동기들은 메신저, 식단표, 공지사항등을 만들었는데&lt;br /&gt;
-코드를 공유하기 위해서 카카오톡, Gmail을 이용하다보니 서로의 진행사항을 확인하기&lt;br /&gt;
-힘들었습니다. Git은 프로젝트를 한 곳에 관리함으로서 이러한 문제를 해결합니다. 또한 서로
-다른 개발자 A,B가 동시에 같은 파일을 수정하는 경우 A,B의 작업이 서로 겹치지 않게 도와 줍니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;2git-로컬-저장소의-구조&quot;&gt;2.Git 로컬 저장소의 구조&lt;/h2&gt;
-&lt;p&gt;Git 로컬 저장소의 구조는 아래와 같습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/Git-LocalRepo.png&quot; alt=&quot;깃 로컬 저장소&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;실제 작업이 이루어지는 Working directory,= Working tree,&lt;br /&gt;
-파일을 저장하는 준비를 하는 Staging area = index,&lt;br /&gt;
-Git이 프로젝트의 메타 데이터와 객체 데이터베이스를 저장하는 .git directory(repository)이 3개로 나뉩니다.&lt;/p&gt;
-
-&lt;p&gt;Woriking directory에서 파일을 수정하고 이를 staging Area에 보냅니다.&lt;br /&gt;
-stage Area에서는 Working directory에서 온 정보를 가지고 commit할 파일에 대한 정보를 저장합니다.&lt;br /&gt;
-stage Area에 있는 파일을 commit하면 .git directory에 영구적으로 저장할 수 있습니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">1.Git 이란 프로그램의 버전 관리를 위해 만들어진 S/W입니다. 학교 과제나 개인 프로젝트를 할 때 변경 사항을 기록하거나 백업을 위해 프로젝트 폴더 전체를 복사하는 경우가 있습니다. 이 경우 폴더의 용량이 큰 경우 상당한 시간이 걸리며, 중복되는 코드가 다시 복사 되기도 합니다 Git은 이러한 문제를 해결합니다.</summary></entry><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-10T15:59:51+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
 작성하는 md파일 보다 이미지가 &lt;strong&gt;상위에 디렉토리에&lt;/strong&gt; 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다.
  예를 들어&lt;/p&gt;
 
@@ -56,36 +18,16 @@ stage Area에 있는 파일을 commit하면 .git directory에 영구적으로 �
 &lt;p&gt;&lt;a href=&quot;https://github.com/Microsoft/vscode/issues/62995&quot;&gt;Markdown relative image in preview not shown&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    apple  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">visual studio code를 사용하여 md파일을 작성 할 때, 작성하는 md파일 보다 이미지가 상위에 디렉토리에 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다. 예를 들어</summary></entry><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image-%EB%B3%B5%EC%82%AC%EB%B3%B8.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/02/01/visual-studio-code-md-image-%EB%B3%B5%EC%82%AC%EB%B3%B8.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
-작성하는 md파일 보다 이미지가 &lt;strong&gt;상위에 디렉토리에&lt;/strong&gt; 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다.
- 예를 들어&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![강아지](../assets/dog.jpg)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;라고 작성했을 때 vscode의 preview는 강아지 이미지를 불러 오지 못했습니다. GFM preview 확장 프로그램을 다운 받기도 했지만 문제는 해결 되지 않았습니다. 그러던 중 검색을 통해 문제를 해결 했습니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;해결방법은-간단합니다&quot;&gt;해결방법은 간단합니다.&lt;/h2&gt;
-&lt;p&gt;그것은 상위 디렉토리를 워크스페이스로 지정하는 것 입니다.
-&lt;img src=&quot;../assets/open-folder.png&quot; alt=&quot;open-folder&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;위의 캡처와 같이 폴더 열기를 선택하여 &lt;strong&gt;md파일,이미지 파일을 모두 포함하는 상위 디렉토리를&lt;/strong&gt; 여는 경우 preview화면에서 보이지않는 이미지를 보이게 할 수 있습니다. vscode가 작업 영역을 상위 폴더까지 인식하게 되어 위의 문제를 해결 할 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;참고링크를 확인하면 개발자가 보안상의 이유로 현재 워크스페이스가 아닌 부모(상위)디렉토리의 파일은 열 수 없게 했다는 답변을 확인 할 수 있습니다.&lt;/p&gt;
-&lt;h3 id=&quot;참고-링크&quot;&gt;참고 링크&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/Microsoft/vscode/issues/62995&quot;&gt;Markdown relative image in preview not shown&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    apple  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">visual studio code를 사용하여 md파일을 작성 할 때, 작성하는 md파일 보다 이미지가 상위에 디렉토리에 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다. 예를 들어</summary></entry><entry><title type="html">Git이란, Git 로컬저장소의 구조</title><link href="http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state.html" rel="alternate" type="text/html" title="Git이란, Git 로컬저장소의 구조" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state.html">&lt;h2 id=&quot;1git-이란&quot;&gt;1.Git 이란&lt;/h2&gt;
-&lt;p&gt;프로그램의 버전 관리를 위해 만들어진 S/W입니다. 학교 과제나 개인 프로젝트를 할 때&lt;br /&gt;
-변경 사항을 기록하거나 백업을 위해 프로젝트 폴더 전체를 복사하는 경우가 있습니다.&lt;br /&gt;
-이 경우 폴더의 용량이 큰 경우 상당한 시간이 걸리며, 중복되는 코드가 다시 복사 되기도&lt;br /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>park</name></author><summary type="html">visual studio code를 사용하여 md파일을 작성 할 때, 작성하는 md파일 보다 이미지가 상위에 디렉토리에 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다. 예를 들어</summary></entry><entry><title type="html">Git이란, Git 로컬저장소의 구조</title><link href="http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state.html" rel="alternate" type="text/html" title="Git이란, Git 로컬저장소의 구조" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/02/01/Git-what-is-git-and-basic-state.html">&lt;h2 id=&quot;1git-이란&quot;&gt;1.Git 이란&lt;/h2&gt;
+&lt;p&gt;프로그램의 버전 관리를 위해 만들어진 S/W입니다. 학교 과제나 개인 프로젝트를 할 때
+변경 사항을 기록하거나 백업을 위해 프로젝트 폴더 전체를 복사하는 경우가 있습니다.
+이 경우 폴더의 용량이 큰 경우 상당한 시간이 걸리며, 중복되는 코드가 다시 복사 되기도
 합니다 Git은 이러한 문제를 해결합니다.&lt;/p&gt;
 
 &lt;p&gt;또한 Git은 &lt;strong&gt;협업에&lt;/strong&gt; 도움을 줍니다.
-학과 프로젝트 도중에 에브리타임을 모방한 앱을 만든적이 있습니다.&lt;br /&gt;
-우선 메인 화면을 만들고 저는 시간표, 동기들은 메신저, 식단표, 공지사항등을 만들었는데&lt;br /&gt;
-코드를 공유하기 위해서 카카오톡, Gmail을 이용하다보니 서로의 진행사항을 확인하기&lt;br /&gt;
+학과 프로젝트 도중에 에브리타임을 모방한 앱을 만든적이 있습니다.
+우선 메인 화면을 만들고 저는 시간표, 동기들은 메신저, 식단표, 공지사항등을 만들었는데
+코드를 공유하기 위해서 카카오톡, Gmail을 이용하다보니 서로의 진행사항을 확인하기
 힘들었습니다. Git은 프로젝트를 한 곳에 관리함으로서 이러한 문제를 해결합니다. 또한 서로
 다른 개발자 A,B가 동시에 같은 파일을 수정하는 경우 A,B의 작업이 서로 겹치지 않게 도와 줍니다.&lt;/p&gt;
 
@@ -100,16 +42,27 @@ Git이 프로젝트의 메타 데이터와 객체 데이터베이스를 저장�
 
 &lt;p&gt;Woriking directory에서 파일을 수정하고 이를 staging Area에 보냅니다.&lt;br /&gt;
 stage Area에서는 Working directory에서 온 정보를 가지고 commit할 파일에 대한 정보를 저장합니다.&lt;br /&gt;
-stage Area에 있는 파일을 commit하면 .git directory에 영구적으로 저장할 수 있습니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">1.Git 이란 프로그램의 버전 관리를 위해 만들어진 S/W입니다. 학교 과제나 개인 프로젝트를 할 때 변경 사항을 기록하거나 백업을 위해 프로젝트 폴더 전체를 복사하는 경우가 있습니다. 이 경우 폴더의 용량이 큰 경우 상당한 시간이 걸리며, 중복되는 코드가 다시 복사 되기도 합니다 Git은 이러한 문제를 해결합니다.</summary></entry><entry><title type="html">이미지</title><link href="http://localhost:4000/jekyll/update/2019/01/30/insert-image-%EB%B3%B5%EC%82%AC%EB%B3%B8.html" rel="alternate" type="text/html" title="이미지" /><published>2019-01-30T16:57:50+09:00</published><updated>2019-01-30T16:57:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/01/30/insert-image%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/01/30/insert-image-%EB%B3%B5%EC%82%AC%EB%B3%B8.html">&lt;h1 id=&quot;이미지-삽입하기&quot;&gt;이미지 삽입하기&lt;/h1&gt;
-&lt;p&gt;아래의 사진을 참조하세요
-… which is shown in the screenshot below:&lt;/p&gt;
+stage Area에 있는 파일을 commit하면 .git directory에 영구적으로 저장할 수 있습니다.&lt;/p&gt;</content><author><name>park</name></author><summary type="html">1.Git 이란 프로그램의 버전 관리를 위해 만들어진 S/W입니다. 학교 과제나 개인 프로젝트를 할 때 변경 사항을 기록하거나 백업을 위해 프로젝트 폴더 전체를 복사하는 경우가 있습니다. 이 경우 폴더의 용량이 큰 경우 상당한 시간이 걸리며, 중복되는 코드가 다시 복사 되기도 합니다 Git은 이러한 문제를 해결합니다.</summary></entry><entry><title type="html">Gitpage Less(pager)</title><link href="http://localhost:4000/jekyll/update/2018/01/30/GitPage-less(pager).html" rel="alternate" type="text/html" title="Gitpage Less(pager)" /><published>2018-01-30T00:00:00+09:00</published><updated>2018-01-30T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/update/2018/01/30/GitPage-less(pager)</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/01/30/GitPage-less(pager).html">&lt;h1 id=&quot;문제-발생&quot;&gt;문제 발생&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/dog.jpg&quot; alt=&quot;My helpful screenshot1&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1github-page-에러-발생unrelated-history-문제&quot;&gt;1.Github page 에러 발생(unrelated history 문제)&lt;/h2&gt;
+&lt;p&gt;Github page를 만들 때 원격 저장소를 먼저 만들었습니다.&lt;br /&gt;
+jekyll로 블로그 관련 폴더를 만든 후 그 폴더를 git로컬 저장소 지정하고 원격저장소에 push하는 경우 “Updates were rejected because the remote contains work that you do not have locally.” 에러가 발생합니다. 이는 로컬 저장소에 없는 작업을 원격 저장소가 가지고 있는 경우에 발생합니다.이는 보통의 경우 원격저장소를 pull하여 해결 할 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;apple    apple dadfdsf&lt;/p&gt;</content><author><name></name></author><summary type="html">이미지 삽입하기 아래의 사진을 참조하세요 … which is shown in the screenshot below:</summary></entry><entry><title type="html">이미지</title><link href="http://localhost:4000/jekyll/update/2019/01/30/insert-image.html" rel="alternate" type="text/html" title="이미지" /><published>2019-01-30T16:57:50+09:00</published><updated>2019-01-30T16:57:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/01/30/insert-image</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/01/30/insert-image.html">&lt;h1 id=&quot;이미지-삽입하기&quot;&gt;이미지 삽입하기&lt;/h1&gt;
-&lt;p&gt;아래의 사진을 참조하세요
-… which is shown in the screenshot below:&lt;/p&gt;
+&lt;p&gt;하지만 원격저장소의 master branch와 로컬에서 push하려는 브런치에 공통된 commit이 없는 경우 “refusing to merge unrelated histories”라는 에러가 발생합니다. 즉 완전히 다른 두 프로젝트를 연결하는 경우 이러한 문제가 발생합니다. 저는 강제 병합을 통해서 이 문제를 해결했습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/dog.jpg&quot; alt=&quot;My helpful screenshot1&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;apple    apple dadfdsf&lt;/p&gt;</content><author><name></name></author><summary type="html">이미지 삽입하기 아래의 사진을 참조하세요 … which is shown in the screenshot below:</summary></entry><entry><title type="html">포스트 해보기</title><link href="http://localhost:4000/jekyll/update/2019/01/30/is-this-run.html" rel="alternate" type="text/html" title="포스트 해보기" /><published>2019-01-30T16:55:50+09:00</published><updated>2019-01-30T16:55:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/01/30/is-this-run</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/01/30/is-this-run.html">&lt;h1 id=&quot;첫-포스트-입니다&quot;&gt;첫 포스트 입니다.&lt;/h1&gt;</content><author><name></name></author><summary type="html">첫 포스트 입니다.</summary></entry><entry><title type="html">포스트 해보기</title><link href="http://localhost:4000/jekyll/update/2019/01/30/is-this-run-%EB%B3%B5%EC%82%AC%EB%B3%B8.html" rel="alternate" type="text/html" title="포스트 해보기" /><published>2019-01-30T16:55:50+09:00</published><updated>2019-01-30T16:55:50+09:00</updated><id>http://localhost:4000/jekyll/update/2019/01/30/is-this-run%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/01/30/is-this-run-%EB%B3%B5%EC%82%AC%EB%B3%B8.html">&lt;h1 id=&quot;첫-포스트-입니다&quot;&gt;첫 포스트 입니다.&lt;/h1&gt;</content><author><name></name></author><summary type="html">첫 포스트 입니다.</summary></entry></feed>
+&lt;p&gt;명령어를 이용하여 로컬 저장소를 원격저장소에 push할 수 있습니다.
+단 이경우에 기존의 원격저장소는 사라지게 되니 주의가 필요합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2less-terminal-pager-program에서-나가는-방법-git-bash창이-계속-이어질-때&quot;&gt;2.less= terminal pager program에서 나가는 방법 (git bash창이 계속 이어질 때)&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;명령어를 사용할 때 맨 밑에 줄에 (END)가 엔터를 눌러도 아무 반응이 없는 것을 볼 수 있습니다. 이를 해결하기 위해서 키보드에서 q를 눌러 주면 됩니다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;less는 텍스트 파일의 내용을 한줄, 혹은 한화면에 보여주는데 사용되는 프로그램 입니다.&lt;/li&gt;
+  &lt;li&gt;less는 more와 vi 명령어를 이용합니다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">문제 발생</summary></entry></feed>

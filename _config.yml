@@ -1,7 +1,13 @@
 collections:
   authors:
     output: true
+  tils:
+    output: true
 
+
+highlighter: rouge
+
+# md 파일에 layout 적용할 필요없게 해준다.   
 defaults:
   - scope:
       path: ""
@@ -13,6 +19,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "tils"
+    values:
+      layout: "til"
   - scope:
       path: ""
     values:
