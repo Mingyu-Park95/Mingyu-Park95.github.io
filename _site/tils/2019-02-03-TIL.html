@@ -1,0 +1,78 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>190203 TIL</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/cs.html" >컴퓨터 과학</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">190203 TIL</h1>
+
+<p>
+  03 Feb 2019
+</p>
+
+<h1 id="jekyll이-md-파일은-html로-띄우는-방법">jekyll이 md 파일은 html로 띄우는 방법</h1>
+
+<p>루트 디렉토리에 md 파일을 저장할 때</p>
+
+<ol>
+  <li>md파일이 front matter을 가지는 경우</li>
+  <li>그렇지 않은 경우</li>
+</ol>
+
+<p>1번은 jekyll이 _site 폴더에 html로 변환된 파일을 저장하고 2번은 md파일을 저장한다. 즉 _site 폴더에는 실제로 웹에 띄워줄 파일들(변환된 파일)을 
+저장하는 것을 알 수 있다. 실제로 _site의 about파일은</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># About page 대신 
+
+&lt;h1&gt;About page&lt;h1&gt; 로 변환 된 것을 확인 할 수 있다.
+</code></pre></div></div>
+
+<p>즉 전처리 작업을 통해 md파일을 html로 변환한 후 그 html파일을 보여주는 것을 알 수 있다.</p>
+
+<h1 id="jekyll이-사용하는-scss">jekyll이 사용하는 Scss</h1>
+
+<p>왜 작성할 때는 scss로 작성하고 부를 때는 css로 부르는 지 잘 모르겠다.</p>
+
+<p>물론 css파일이 _site/assets/css에 생성되긴 하지만</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;link rel="stylesheet" href="/assets/css/styles.css"&gt;
+</code></pre></div></div>
+
+<p>로 경로를 설정하는게 이해가 되질 않는다. jekyll이 인식할때는 루트폴더가 _site인가…</p>
+
+<h1 id="sass--css-전처리기는-또-뭔가">Sass =&gt; css 전처리기는 또 뭔가.</h1>
+
+
+    </div>
+  </body>
+</html>

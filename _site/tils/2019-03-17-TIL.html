@@ -1,0 +1,125 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>190317 TIL</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/cs.html" >컴퓨터 과학</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">190317 TIL</h1>
+
+<p>
+  17 Mar 2019
+</p>
+
+<h2 id="오늘-한-일">오늘 한 일</h2>
+<ul>
+  <li>
+    <p>11시 기상</p>
+  </li>
+  <li>성공과 실패를 좌우하는 1%네트워크 원리 정독
+    <ul>
+      <li>DNS서버 작동 원리 관련</li>
+      <li>애플리케이션(브라우저)가 <strong>프로토콜 스택에 접근하는 개략적인 방식</strong></li>
+    </ul>
+  </li>
+  <li>꿈을 비추는 거울 과제</li>
+  <li>바탕화면 정리</li>
+  <li>졸업 인증서 작성</li>
+  <li>코딩 테스트 복기</li>
+  <li>대학영어2 과제</li>
+</ul>
+
+<h2 id="알게-된-것">알게 된 것</h2>
+
+<ul>
+  <li>DNS서버에 root 서버가 존재한다는 것</li>
+  <li>DNS서버에도 캐시가 존재한다는 것.</li>
+  <li>DNS서버의 캐시는 일정기간 동안만 유지 되는 것(IP주소 변경이 생겼는데 변경 전 것으로 연결되면 안되기 때문)</li>
+  <li>애플리케이션이 프로토콜 스택에 의뢰하는 방식 (웹 기준으로 설명)
+    <ul>
+      <li>리졸버를 호출하는 것과 같이 소켓라이브러리의 프로그램을 호출한다.</li>
+      <li>소켓은 1.소켓라이브러리, 2.데이터 출입구의 끝단, 3.소켓라이브러리안에 있는 부프로그램이름을 의미한다.</li>
+      <li>socket 소켓을 만든다.
+        <ul>
+          <li>디스크립터가 복수의 소켓을 구별하게 해준다.</li>
+          <li>하나의 애플리케이션이 한번에 여러개의 서버에 접근할 경우 복수의 소켓이 필요하기 때문</li>
+        </ul>
+      </li>
+      <li>connect 연결한다.
+        <ul>
+          <li>이때 프로토콜 스택에 디스크립터,서버IP,포트번호를 전달한다.</li>
+          <li>포트번호는 서버측의 특정 소켓에 접근하기 위해 사용된다. (클라이언트는 서버의 소켓번호를 모른다)</li>
+        </ul>
+      </li>
+      <li>write 정보를 보낸다.
+        <ul>
+          <li>연결이 완료된 경우 리퀘스트 메시지, 디스크립터,메시지 길이를 프로토콜 스택에 넘겨준다.</li>
+        </ul>
+      </li>
+      <li>read 서버에게 응답을 받는다
+        <ul>
+          <li>이 역시 프로토콜 스택에 의뢰하여 받는다. 프로토콜 스택은 메시지를 수신버퍼(애플리케이션에 할당된 메모리)에 저장함으로써 메시지를 넘겨준다.</li>
+        </ul>
+      </li>
+      <li>close 연결을 끊는다. HTTP버전에 따라 다르다.
+        <ul>
+          <li>서버에서 송신메시지를 보낸 직후 바로 끊는다. (애플리케이션마다 다르다.)</li>
+          <li>클라이언트는 브라우저가 read 했을때 프로토콜 스택으로부터 “송수신이 완료되어 close”됐다는 사실을 알려주고 이후 클라이언트도 close 합니다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="느낀점">느낀점</h2>
+
+<ul>
+  <li>일상적인 일을 하다 시간을 너무 많이 소비했다.</li>
+  <li>생각보다 시간이 일찍간다.</li>
+  <li>
+    <p>어제 코딩 테스트 끝났다고 기분을 너무 냈다.</p>
+  </li>
+  <li>DNS서버의 계층구조 부분이 이해가 안된다.
+    <ul>
+      <li>com에 해당하는 DNS서버는 그 아랫단계 DNS 서버의 IP주소가 들어간다</li>
+      <li>그렇다면 com에 해당하는 DNS 서버는 naver라는 도메인을 가지고 있는 하부 DNS서버는 어떻게 알 수 있나.</li>
+    </ul>
+  </li>
+  <li>프로토콜 스택에 정보 전송을 의뢰할 경우 애플리케이션은 connect시 디스크립터를 프로토콜스택에 넘겨준다. 하지만 무슨 이유에서인지 프로토콜 스택은 “서버”에 디스크립터 대신 “자신이 생성한 포트번호”를 통지한다.
+디스크립터가 있는데 왜 “포트번호”를 새로 만들어 전송해주는 지 궁금하다.</li>
+</ul>
+
+<h2 id="내일-할일">내일 할일</h2>
+
+    </div>
+  </body>
+</html>

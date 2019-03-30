@@ -1,0 +1,64 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>jekyll 테마 적용이 안될 때, cannot load such file --bundler (LoadError), jeykyll serve 에러</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/cs.html" >컴퓨터 과학</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">jekyll 테마 적용이 안될 때, cannot load such file --bundler (LoadError), jeykyll serve 에러</h1>
+<p>
+  30 Jan 2019
+  <!-- 
+  
+    - <a href="/authors/jill.html">Jill Smith</a>
+   -->
+</p>
+
+<p>jekyll 테마를 적용하다 보면 가끔 아래와 같은 에러가 발생하는 경우가 있습니다.
+<img src="/assets/image/ruby-gemlock-version-error.PNG" alt="LoadError" /></p>
+
+<p>제 경우에는 번들러의 버전이 맞지 않아 이런 오류가 발생했습니다.</p>
+
+<p>이를 해결하기 위해서 테마가 들어있는 폴더의 Gemfile.lock 파일을 열고 bundled with라고 적힌 문장을 찾아 버전을 확인합니다.</p>
+
+<p><img src="/assets/image/bundle-version.PNG" alt="drawing" width="400" /></p>
+
+<p>그리고</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler -v 1.16.1
+</code></pre></div></div>
+
+<p>처럼 해당 버전의 번들러를 설치해주시면 문제가 해결 됩니다.</p>
+
+    </div>
+  </body>
+</html>

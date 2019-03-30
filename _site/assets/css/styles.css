@@ -70,3 +70,6 @@ body {
 @font-face {
   font-family: NanumSquareRoundR;
   src: url(/assets/font/NanumSquareRoundR.ttf); }
+a {
+  color: blue;
+  text-decoration: none; }

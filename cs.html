@@ -1,0 +1,16 @@
+---
+layout: default
+title: cs
+---
+<h1>cs Posts</h1>
+
+<ul>
+  {% for cs in site.cs %}
+    <li>
+      <p>
+        <h2 class ="post-title"><a class="post-title-a" href="{{ cs.url }}">{{ cs.title }}</a>{{ cs.date|date_to_string}}</h2>
+      </p>
+      <!-- <p>{{ post.excerpt }} </p>  -->
+    </li>
+  {% endfor %}
+</ul>

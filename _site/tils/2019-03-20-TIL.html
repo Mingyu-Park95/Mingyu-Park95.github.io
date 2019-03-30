@@ -1,0 +1,127 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>190320 TIL</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/cs.html" >컴퓨터 과학</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">190320 TIL</h1>
+
+<p>
+  20 Mar 2019
+</p>
+
+<h2 id="오늘-한-일">오늘 한 일</h2>
+
+<ul>
+  <li>성공과 실패를 좌우하는 1%네트워크 원리 정독
+    <ul>
+      <li>10시 기상</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="알게-된-것">알게 된 것</h2>
+<ul>
+  <li>프로토콜 스택의 TCP/IP관련
+    <ul>
+      <li>개략적인 프로토콜 스택의 구조 TCP, IP, ARP, ICMP</li>
+      <li>소켓 생성시 발생하는 일 socket
+        <ul>
+          <li>통신에 관련된 정보 저장</li>
+          <li>디스크립터를 어플리케이션에게 알림</li>
+          <li>소켓 메모리에는 아무것도 없는 상태</li>
+        </ul>
+      </li>
+      <li>접속 (웹 기준) connect (디스크립터, 수신측 ip,포트번호)
+        <ul>
+          <li>소켓이 만들어진 직후 데이터를 바로 전송할 수는 없고 서로 연결하기 위한 <strong>접속=커넥트</strong>과정이 필요하다.</li>
+          <li>접속 과정에서 제어 정보를 주고 받는다
+            <ul>
+              <li>송신측과 수신측이 주고 받는 제어정보 (TCP헤더)</li>
+              <li>프로토콜 스택이 소켓에 저장하는 제어정보
+  -송신, 수신측에서 보내는 정보</li>
+              <li>송신측의 ip,포트번호,SYN(시퀀스 값),윈도우(가용 버퍼 메모리 크기)
+                <ul>
+                  <li>SYN 시퀀스번호(난수 초기값=&gt;난수가 아닌 경우 공격 받을 수 있다.)
+                    <ul>
+                      <li>TCP/IP에서는 데이터를 일정 크기로 나누어 보내기 때문에 사용</li>
+                      <li>분할 되기 전 데이터의 바이트를 세어 이를 나타냄</li>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>프로토콜 스택이 소켓에 저장하는 제어정보(어플리케이션으로부터 받은 정보,통신하는 상대의 정보)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>통신 write
+        <ul>
+          <li>버퍼 공간 확보
+            <ul>
+              <li>버퍼가 크면 대기시간이 길어진다</li>
+              <li>버퍼가 작으면 전송을 많이 함</li>
+            </ul>
+          </li>
+          <li>데이터가 잘 전송 되었는지 확인 ACK을 이용
+            <ul>
+              <li>하나의 패킷에 매번 ACK을 보내는 핑퐁</li>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="느낀점">느낀점</h2>
+
+<h2 id="내일-할일">내일 할일</h2>
+
+<h2 id="더-알아-볼-것">더 알아 볼 것</h2>
+<ul>
+  <li>SYN 난수 값으로 주면 수신하는 측에서 어떻게 이해하지?</li>
+  <li>매 송신 때마다 SYN 번호를 보내나
+    <ul>
+      <li>매 송신 때 마다 보낸다</li>
+      <li>접속시에는 SYN비트를 1로하여, 초기값을 보내고</li>
+      <li>데이터 송신시에는 SYN비트를 1로 하지 않고 시퀀스 번호만 보내는 것 <strong>같다</strong></li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+  </body>
+</html>

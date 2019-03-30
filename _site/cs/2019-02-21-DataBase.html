@@ -1,0 +1,221 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>2과목 전자계산기 백지 복습</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/cs.html" >컴퓨터 과학</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">2과목 전자계산기 백지 복습</h1>
+<p>
+  21 Feb 2019
+  <!-- 
+  
+    - <a href="/authors/park.html">Park mingyou</a>
+   -->
+</p>
+
+<h1 id="전자-계산기-과목">전자 계산기 과목</h1>
+
+<ul>
+  <li><a href="#불대수">불대수</a></li>
+  <li><a href="#카르노-맵">카르노 맵</a></li>
+  <li><a href="#플립플롭">플립플롭</a></li>
+  <li><a href="#반가산기">반가산기</a></li>
+  <li><a href="#전가산기">전가산기</a></li>
+  <li><a href="#중앙처리장치">중앙처리장치</a></li>
+  <li><a href="#명령어">명령어</a></li>
+  <li><a href="#주소-지정-방식">주소 지정 방식</a></li>
+  <li><a href="#마이크로-오퍼레이션">마이크로 오퍼레이션</a></li>
+  <li><a href="#ROM의-종류">ROM의 종류</a></li>
+  <li><a href="#인터럽트">인터럽트</a></li>
+  <li><a href="#입출력-장치?">입출력 장치?</a></li>
+  <li><a href="#명령어-주기?">명령어 주기?</a></li>
+  <li><a href="#메모리-인터리빙">메모리 인터리빙</a></li>
+  <li><a href="#캐시-메모리?">캐시 메모리?</a></li>
+  <li><a href="#ROM과-RAM-크기-계산">ROM과 RAM 크기계산</a></li>
+</ul>
+
+<h2 id="불대수">불대수</h2>
+<p>논리 게이트를 대수를 이용하여 나타낸다 이를 이용하여 논리게이트를
+쉽게 단순화 시킬 수 있다.
+교환 법칙, 결합법칙, 드모르간 법칙 성립</p>
+
+<ul>
+  <li>드모르간 법칙 =&gt; 집합의 벤다이어그램을 통해 암기
+    <ul>
+      <li>(A+B)’=A’B’</li>
+      <li>(AB)’ =A’+B’</li>
+    </ul>
+  </li>
+  <li>x+x’y = x+y =&gt; x+yz = (x+y)(x+z)</li>
+</ul>
+
+<p>유도식은 아래와 같다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(x'+x)(x+y)
+x'x+xy+xx+x'y
+x(x'+y+1) +x'y
+</code></pre></div></div>
+
+<h2 id="카르노-맵">카르노 맵</h2>
+
+<p>특정 불대수를 정리하는데 사용됨 2,4,8과같이 2의 배수로 묶고
+각묶음 내에서는 곱연산, 묶음 별로는 합연산을 실시한다.</p>
+
+<h2 id="플립플롭">플립플롭</h2>
+<ul>
+  <li>상태를 변화 시키는 신호가 오기 전까지 현 상태를 유지한다.</li>
+  <li>
+    <p>한비트의 정보를 저장한다.</p>
+  </li>
+  <li>SR -</li>
+  <li>JK -SR플립플롭의 모순? 해결</li>
+  <li>D</li>
+  <li>T</li>
+</ul>
+
+<h2 id="반가산기">반가산기</h2>
+
+<p>두개의 <em>이진수</em>? 덧셈에 사용</p>
+
+<h2 id="전가산기">전가산기</h2>
+
+<p>최소 반가산기 2개를 이용하여 만듬
+3개의</p>
+
+<h2 id="중앙처리장치">중앙처리장치</h2>
+
+<ul>
+  <li>
+    <p>제어 장치</p>
+  </li>
+  <li>산술 연산 장치(ALU)
+    <ul>
+      <li>산술 연산, 논리 연산을 수행하는 장치</li>
+    </ul>
+  </li>
+  <li>레지스터
+    <ul>
+      <li>범용 레지스터</li>
+      <li>특수 목적 레지스터</li>
+      <li>pc : 다음에 수행할 명령의 번지 수</li>
+      <li>MAR : 주소를 기억하는 레지스터</li>
+      <li>MBR : 정보를 잠시 기억하는 레지스터</li>
+      <li>psw : 프로그램의 상태를 저장하는 레지스터?</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="명령어">명령어</h2>
+
+<p>opcode와 operand로 나뉜다. opcode는 수행할 명령어이며 operand는 피연산자의 주소이다.</p>
+
+<h2 id="주소-지정-방식">주소 지정 방식</h2>
+<p>직접 주소 vs 간접 주소</p>
+<ul>
+  <li>직접 주소 지정방식의 경우 operand의 값이 원하는 정보의 주소값이고</li>
+  <li>간접 주소 지정방식의 경우 operand가 가리키는 주소에 있는 값이 원하는 정보의 주소 값이다.</li>
+</ul>
+
+<h2 id="마이크로-오퍼레이션">마이크로 오퍼레이션</h2>
+<ul>
+  <li>명령어를 이루는 작은 명령어</li>
+  <li>제어 명령에 따라 수행 된다.</li>
+  <li>
+    <p>정보 전달로 선택,</p>
+  </li>
+  <li>마이크로 오퍼레이션은 처리를 위한 일련의 루틴을 가지고 있다.</li>
+</ul>
+
+<p>ROM(Read only Memory)에 저장되어 있다.</p>
+
+<h2 id="rom의-종류">ROM의 종류</h2>
+
+<ul>
+  <li>PROM(p? ROM) : 한번만 쓰기가 가능한 ROM</li>
+  <li>EPROM() :</li>
+  <li>EEPROM() :</li>
+</ul>
+
+<h2 id="인터럽트">인터럽트</h2>
+
+<h2 id="입출력-장치">입출력 장치?</h2>
+
+<p>입출력을 확인하는 방법</p>
+
+<ul>
+  <li>programmed I/O</li>
+  <li>플래그 사용?</li>
+  <li>입출력 발생시 cpu에게 이를 알린다.</li>
+  <li>DMA(Direct Memory Acess) : CPU를 거치지 않고 메모리에 직접 접근한다. 보조메모리와 주기억장치</li>
+  <li>spooling : 입출력 장치와 cpu의 속도 차이를 극복하기 위해 디스크에 많은 자료를 모은 후 한번에 보냄 ex)프린터</li>
+</ul>
+
+<h2 id="명령어-주기">명령어 주기?</h2>
+
+<ul>
+  <li>Fetch(인출) : 주 메모리의 정보를 cpu로 가져오는 것</li>
+  <li>해독 : 가져온 명령을 해석하는 과정</li>
+  <li>실행 : 명령어를 실행</li>
+  <li>저장 : 완료된 정보를 저장</li>
+</ul>
+
+<h2 id="메모리-인터리빙">메모리 인터리빙</h2>
+
+<p>잘모르겠다?</p>
+
+<h2 id="캐시-메모리">캐시 메모리?</h2>
+<p>CPU와 주기억장치의 속도 차이를 극복하기 위한 메모리
+한번이라도 참조된 정보는 캐시에 기록된다.</p>
+
+<p>hit율 = 적중횟수/참조 횟수</p>
+
+<p>?
+캐시에서 발새한 수정사항을 언제 메인메모리에 저장하느냐에 따른 분류</p>
+<ul>
+  <li>writethrough 발생하는 매 순간 메인메모리에 반영</li>
+  <li>writeonce 한번만 기록하고 그후로는 기록하지 않음</li>
+  <li>writeback 더 이상 수정이 일어나지 않을 때 반영</li>
+</ul>
+
+<h2 id="rom과-ram-크기-계산">ROM과 RAM 크기 계산</h2>
+<p>이건 지금도 모르겠다.</p>
+
+<h2 id="더-공부해야-할-것">더 공부해야 할 것</h2>
+
+<ul>
+  <li>Decoder : 해독기 n bit의 코드화된 정보를 각 비트 조합에 따라 2^n개의 출력으로 번역하는 회로, 명령어의 op-code,operand 해독에 사용</li>
+</ul>
+
+    </div>
+  </body>
+</html>

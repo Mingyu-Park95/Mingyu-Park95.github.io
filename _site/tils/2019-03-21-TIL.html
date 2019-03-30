@@ -1,0 +1,86 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>190321 TIL</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/cs.html" >컴퓨터 과학</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">190321 TIL</h1>
+
+<p>
+  21 Mar 2019
+</p>
+
+<h2 id="오늘-한-일">오늘 한 일</h2>
+<ul>
+  <li>
+    <p>8시 30분 기상</p>
+  </li>
+  <li>성공과 실패를 결정하는 1%의 네트워크원리 정독</li>
+  <li>아이디어 구상 및 종합설계 제안서 작성
+    <h2 id="알게-된-것">알게 된 것</h2>
+  </li>
+  <li>데이터 송,수신 과정이 끝나고 소켓을 말소하는 과정
+    <ul>
+      <li>서버에서 클라이언트의 요청을 끝낸뒤 컨트롤비트 FIN=1로 설정하여 보냄</li>
+      <li>클라이언트는 이를 받았다고 ACK을 보냄</li>
+      <li>클라이언트에서 FIN=1을 보냄</li>
+      <li>서버에서 ACK을 보냄</li>
+      <li>소켓 말소시 일정한 시간을 둔 후 말소한다
+        <ul>
+          <li>ex)서버에서 클라이언트의 ACK을 받지 못한 상황에서 클라이어트가 소켓 말소</li>
+          <li>프로토콜 스택은 애플리케이션의 요청에따라 새로운 소켓을 생성 <strong>우연히 포트번호가 같음</strong></li>
+          <li>서버는 ACK을 못받아서 다시 FIN=1을 보냄, 새로운 소켓이 말소
+  -IP와 이더넷의 패킷 송,수신 동작</li>
+          <li>패킷의 기본개념 헤더 + TCP부분에서 받은 데이터</li>
+          <li>IP헤더는 수신지의 IP 주소를 가진다.</li>
+          <li>MAC헤더는 이더넷등 LAN을 사용하여 가장 가까운 라우터까지 패킷을 운반</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="느낀점">느낀점</h2>
+
+<h2 id="내일-할일">내일 할일</h2>
+
+<h2 id="더-알아-볼-것">더 알아 볼 것</h2>
+<ul>
+  <li>IP담당부분에서 MAC헤더를 만들 때, LAN에 연결된 다른 기기를 조사해야하는데 이때 LAN어댑터에 어떠한 정보를 내려보낸후 다시 돌려 받는 것인가. 
+-TCP IP에도 비슷한거 있었던것같은데 
+-리졸버도 비슷하게 작동한것 같다</li>
+</ul>
+
+    </div>
+  </body>
+</html>

@@ -1,12 +1,12 @@
 html {
     font-size: 20px;
 }
-body {
+body{
     margin:0;
     padding:0;
 }
 
-* {
+*{
     box-sizing: border-box;
     font-family: NanumSquareRoundR;
 }
@@ -16,3 +16,7 @@ body {
             src: url(/assets/font/NanumSquareRoundR.ttf);
 }
 
+a{
+    color: blue;
+    text-decoration: none;
+}

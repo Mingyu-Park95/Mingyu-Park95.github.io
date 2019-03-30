@@ -1,22 +1,36 @@
+collections_dir: my_collections 
+
 collections:
   authors:
     output: true
   tils:
     output: true
-
+  cs:
+    output: true
 
 highlighter: rouge
 
 # md 파일에 layout 적용할 필요없게 해준다.   
 defaults:
+
+  # - scope:
+  #     path: ""
+  #     type: "authors"
+  #   values:
+  #     layout: "author"
   - scope:
       path: ""
       type: "authors"
-    values:
+    values: 
       layout: "author"
   - scope:
       path: ""
       type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "cs"
     values:
       layout: "post"
   - scope:
