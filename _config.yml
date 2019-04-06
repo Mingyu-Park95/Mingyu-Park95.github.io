@@ -5,7 +5,7 @@ collections:
     output: true
   tils:
     output: true
-  cs:
+  computers:
     output: true
 
 highlighter: rouge
@@ -30,9 +30,9 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "cs"
+      type: "computers"
     values:
-      layout: "post"
+      layout: "computer"
   - scope:
       path: ""
       type: "tils"

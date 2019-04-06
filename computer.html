@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+---
+<h1>CS Posts</h1>
+
+<ul>
+  {% for computer in site.computers %}
+    <li>
+      <p>
+        <h2 class ="post-title"><a class="post-title-a" href="{{ computer.url }}">{{ computer.title }}</a></h2>
+      </p>
+      <!-- <p>{{ post.excerpt }} </p>  -->
+    </li>
+  {% endfor %}
+</ul>
