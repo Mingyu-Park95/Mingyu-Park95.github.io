@@ -10,3 +10,5 @@
   link: /staff.html
 - name: Computer
   link: /computer.html
+- name: django
+  link: /django.html

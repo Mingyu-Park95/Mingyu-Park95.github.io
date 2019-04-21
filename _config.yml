@@ -7,6 +7,8 @@ collections:
     output: true
   computers:
     output: true
+  djangos:
+    output: true
 
 highlighter: rouge
 
@@ -40,5 +42,11 @@ defaults:
       layout: "til"
   - scope:
       path: ""
+      type: "djangos"
+    values: 
+      layout: "django"
+  - scope:
+      path: ""
     values:
       layout: "default"
+  

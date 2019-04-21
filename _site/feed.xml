@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-21T11:10:02+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image</id><content type="html" xml:base="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-21T16:16:27+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image</id><content type="html" xml:base="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
 작성하는 md파일 보다 이미지가 &lt;strong&gt;상위에 디렉토리에&lt;/strong&gt; 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다.
  예를 들어&lt;/p&gt;
 
@@ -54,7 +54,34 @@ stage Area에 있는 파일을 commit하면 .git directory에 영구적으로 �
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler -v 1.16.1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;처럼 해당 버전의 번들러를 설치해주시면 문제가 해결 됩니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyll 테마를 적용하다 보면 가끔 아래와 같은 에러가 발생하는 경우가 있습니다.</summary></entry><entry><title type="html">Github 강제 병합, git less에서 나가기</title><link href="http://localhost:4000/etc/2018/01/30/GitPage-less(pager).html" rel="alternate" type="text/html" title="Github 강제 병합, git less에서 나가기" /><published>2018-01-30T00:00:00+09:00</published><updated>2018-01-30T00:00:00+09:00</updated><id>http://localhost:4000/etc/2018/01/30/GitPage-less(pager)</id><content type="html" xml:base="http://localhost:4000/etc/2018/01/30/GitPage-less(pager).html">&lt;h1 id=&quot;문제-발생&quot;&gt;문제 발생&lt;/h1&gt;
+&lt;p&gt;처럼 해당 버전의 번들러를 설치해주시면 문제가 해결 됩니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyll 테마를 적용하다 보면 가끔 아래와 같은 에러가 발생하는 경우가 있습니다.</summary></entry><entry><title type="html">jekyll 사용시 md파일 이미지 크기 조정</title><link href="http://localhost:4000/etc/2019/01/30/Jekyll-image-size-control.html" rel="alternate" type="text/html" title="jekyll 사용시 md파일 이미지 크기 조정" /><published>2019-01-30T16:57:50+09:00</published><updated>2019-01-30T16:57:50+09:00</updated><id>http://localhost:4000/etc/2019/01/30/Jekyll%20image%20size%20control</id><content type="html" xml:base="http://localhost:4000/etc/2019/01/30/Jekyll-image-size-control.html">&lt;p&gt;지킬을 이용하여 md파일을 작성 할 때 이미지를 첨부해야하는 경우가 있습니다. 저는 html 태그인 &amp;lt;img …/&amp;gt;을 사용하여 크기를 조절하였지만 이보다 편리한 방법을 찾아 이 글을 포스트 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;이미지-크기-조절&quot;&gt;이미지 크기 조절&lt;/h2&gt;
+
+&lt;p&gt;기존 md파일에 이미지를 추가하는 방법은 아래와 같습니다&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![이름](www.naver.com/img/29.jpg)
+![이름](/assets/img/dog.jpg)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;아래는 600x600 이미지 입니다.
+&lt;img src=&quot;/assets/image/dog.JPG&quot; alt=&quot;dog&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{: width=&quot;&quot; height=&quot;&quot;}&lt;/code&gt;를 이용하여 해당 이미지의 크기를 조절 할 수 있습니다.
+““안에는 px값 %값을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![이름](/assets/img/dog.jpg){: width=&quot;&quot; height=&quot;&quot;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;width,height 모두 300으로 설정한 경우 입니다.&lt;br /&gt;
+&lt;img src=&quot;/assets/image/dog.JPG&quot; alt=&quot;dog&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;width,height 모두 50%로 설정한 경우 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/image/dog.JPG&quot; alt=&quot;dog&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;두 이미지의 크기가 다른 이유는 전자의 경우 300px로 크기가 고정되어 있고
+후자의 경우 md파일의 이미지가 jekyll에 의해 `&lt;img..&gt;&lt;/img..&gt;로 변환 된 후 &lt;img..&gt;&lt;/img..&gt;를 &lt;strong&gt;감싸고 있는 태그의 크기&lt;/strong&gt;에 대해 %가 적용 되기 때문입니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">지킬을 이용하여 md파일을 작성 할 때 이미지를 첨부해야하는 경우가 있습니다. 저는 html 태그인 &amp;lt;img …/&amp;gt;을 사용하여 크기를 조절하였지만 이보다 편리한 방법을 찾아 이 글을 포스트 합니다.</summary></entry><entry><title type="html">Github 강제 병합, git less에서 나가기</title><link href="http://localhost:4000/etc/2019/01/30/GitPage-less(pager).html" rel="alternate" type="text/html" title="Github 강제 병합, git less에서 나가기" /><published>2019-01-30T00:00:00+09:00</published><updated>2019-01-30T00:00:00+09:00</updated><id>http://localhost:4000/etc/2019/01/30/GitPage-less(pager)</id><content type="html" xml:base="http://localhost:4000/etc/2019/01/30/GitPage-less(pager).html">&lt;h1 id=&quot;문제-발생&quot;&gt;문제 발생&lt;/h1&gt;
 
 &lt;h2 id=&quot;1github-에러-발생unrelated-history-문제&quot;&gt;1.Github 에러 발생(unrelated history 문제)&lt;/h2&gt;
 &lt;p&gt;Github page를 만들 때 원격 저장소를 먼저 만들었습니다.&lt;br /&gt;

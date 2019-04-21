@@ -1,0 +1,17 @@
+---
+layout: default
+title: django
+---
+<h1>django</h1>
+
+<ul>
+  {% for django in site.djangos %}
+    <li>
+      <p>
+        <h2 class ="post-title"><a class="post-title-a" href="{{ django.url }}">{{ django.title }}</a></h2>
+      </p>
+      <!-- <p>{{ post.excerpt }} </p>  -->
+    </li>
+  {% endfor %}
+</ul>
+
