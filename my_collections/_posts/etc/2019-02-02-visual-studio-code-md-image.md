@@ -15,10 +15,12 @@ visual studio code를 사용하여 md파일을 작성 할 때,
 ## 해결방법은 간단합니다.
 그것은 상위 디렉토리를 워크스페이스로 지정하는 것 입니다.
 
-<img src="/assets/image/open-folder.PNG" alt="open-folder" width="700"/>
+![title](/assets/image/open-folder.PNG){: width="50%" height="50%"}
+
 
 위의 캡처와 같이 폴더 열기를 선택하여 **md파일,이미지 파일을 모두 포함하는 상위 디렉토리를** 여는 경우 preview화면에서 보이지않는 이미지를 보이게 할 수 있습니다. vscode가 작업 영역을 상위 폴더까지 인식하게 되어 위의 문제를 해결 할 수 있습니다. 
   
 참고링크를 확인하면 개발자가 보안상의 이유로 현재 워크스페이스가 아닌 부모(상위)디렉토리의 파일은 열 수 없게 했다는 답변을 확인 할 수 있습니다.
 ### 참고 링크
 [Markdown relative image in preview not shown](https://github.com/Microsoft/vscode/issues/62995)
+
