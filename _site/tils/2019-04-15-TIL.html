@@ -1,0 +1,96 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>190415 TIL</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/computer.html" >Computer</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">190415 TIL</h1>
+
+<p>
+  15 Apr 2019
+</p>
+
+<h2 id="오늘-한-일">오늘 한 일</h2>
+
+<ul>
+  <li>버추얼 박스에 ip주소가 3개 잡히는데 192.168.0.8은 로컬인거 알겠는데 172.0.0.1은 무슨 주소지
+    <ul>
+      <li>로컬로 연결 되기는 한다.</li>
+      <li>docker와 연관 된 것 같은데 잘 모르겠다.</li>
+    </ul>
+  </li>
+  <li>C linkage</li>
+  <li>우분투에서 아파치2, php7.2연동</li>
+  <li>우분투 환경에서 아파치2 설정 변경
+    <ul>
+      <li>000.default파일, ??????.conf 파일에서 var/www/html 수정</li>
+    </ul>
+  </li>
+  <li>php 이용해서 파일 저장하기
+    <ul>
+      <li>아파치 권한 에러(You don’t have permission to access on this server.) =&gt; 디렉토리 잘못 설정해서 발생</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="알게-된-것">알게 된 것</h2>
+
+<p>C linkage
+    - C에서 static으로 선언된 전역 변수는 그 함수 내부에서만 사용할 수 있다.
+    - extern을 사용하여 다른 c파일에 있는 변수를 사용할 수 있다.</p>
+<ul>
+  <li>우분투에서 파일 만드는 방법 touch 이용 최종 수정시간을 변경할 때도 사용되는 명령어</li>
+  <li>아파치 권한 설정 에러(해결)
+    <ul>
+      <li>/home/<strong>사용자이름</strong>/(내가정한 디렉토리)과 같이 설정해주어야 한다.</li>
+      <li>ubuntu가 처음이라 /home/(내가정한 디렉토리)와 같이 적어서 에러가 발생했다.</li>
+    </ul>
+  </li>
+  <li>escape code
+  -</li>
+  <li>cat /var/log/apache2/error.log
+    <ul>
+      <li>아파치 에러로그 저장장소</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="내일-할일">내일 할일</h2>
+
+<h2 id="고칠점">고칠점</h2>
+
+<h2 id="더-알아-볼-것">더 알아 볼 것</h2>
+
+    </div>
+  </body>
+</html>

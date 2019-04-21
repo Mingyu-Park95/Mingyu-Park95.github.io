@@ -15,6 +15,7 @@ visual studio code를 사용하여 md파일을 작성 할 때,
 ## 해결방법은 간단합니다.
 그것은 상위 디렉토리를 워크스페이스로 지정하는 것 입니다.
 
+C:\Users\Administrator\myBlog\assets\image\open-folder.PNG
 <img src="/assets/image/open-folder.PNG" alt="drawing" width="700"/>
 
 
