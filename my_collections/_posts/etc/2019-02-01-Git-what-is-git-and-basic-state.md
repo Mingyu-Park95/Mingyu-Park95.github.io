@@ -21,7 +21,7 @@ categories: etc
 ## 2.Git 로컬 저장소의 구조  
 Git 로컬 저장소의 구조는 아래와 같습니다.
 
-<img src="/assets/image/bundle-version.PNG" alt="git local repo" width="400"/>
+<img src="/assets/image/Git-LocalRepo.PNG" alt="git local repo" width="400"/>
 
 실제 작업이 이루어지는 Working directory,= Working tree,  
 파일을 저장하는 준비를 하는 Staging area = index,  

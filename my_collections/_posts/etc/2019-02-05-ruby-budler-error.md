@@ -10,7 +10,7 @@ jekyll 테마를 적용하다 보면 가끔 아래와 같은 에러가 발생하
 
 이를 해결하기 위해서 테마가 들어있는 폴더의 Gemfile.lock 파일을 열고 bundled with라고 적힌 문장을 찾아 버전을 확인합니다.
 
-<img src="/assets/image/bundle-version.PNG" alt="drawing" width="400"/>
+<img src="/assets/image/bundle-version.PNG" alt="bundle-version" width="400"/>
 
 그리고 
 

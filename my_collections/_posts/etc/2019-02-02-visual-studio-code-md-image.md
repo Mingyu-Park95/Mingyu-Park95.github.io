@@ -15,9 +15,7 @@ visual studio code를 사용하여 md파일을 작성 할 때,
 ## 해결방법은 간단합니다.
 그것은 상위 디렉토리를 워크스페이스로 지정하는 것 입니다.
 
-C:\Users\Administrator\myBlog\assets\image\open-folder.PNG
-<img src="/assets/image/open-folder.PNG" alt="drawing" width="700"/>
-
+<img src="/assets/image/open-folder.PNG" alt="open-folder" width="700"/>
 
 위의 캡처와 같이 폴더 열기를 선택하여 **md파일,이미지 파일을 모두 포함하는 상위 디렉토리를** 여는 경우 preview화면에서 보이지않는 이미지를 보이게 할 수 있습니다. vscode가 작업 영역을 상위 폴더까지 인식하게 되어 위의 문제를 해결 할 수 있습니다. 
   

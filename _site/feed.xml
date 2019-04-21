@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-21T10:01:12+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image</id><content type="html" xml:base="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-21T10:45:34+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">visual studio code preview에 이미지가 적용되지 않을 때</title><link href="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html" rel="alternate" type="text/html" title="visual studio code preview에 이미지가 적용되지 않을 때" /><published>2019-02-01T08:39:50+09:00</published><updated>2019-02-01T08:39:50+09:00</updated><id>http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image</id><content type="html" xml:base="http://localhost:4000/etc/2019/02/01/visual-studio-code-md-image.html">&lt;p&gt;visual studio code를 사용하여 md파일을 작성 할 때, 
 작성하는 md파일 보다 이미지가 &lt;strong&gt;상위에 디렉토리에&lt;/strong&gt; 있는 경우, vscode preview에서 이미지가 보이지 않는 문제가 발생했습니다.
  예를 들어&lt;/p&gt;
 
@@ -10,8 +10,7 @@
 &lt;h2 id=&quot;해결방법은-간단합니다&quot;&gt;해결방법은 간단합니다.&lt;/h2&gt;
 &lt;p&gt;그것은 상위 디렉토리를 워크스페이스로 지정하는 것 입니다.&lt;/p&gt;
 
-&lt;p&gt;C:\Users\Administrator\myBlog\assets\image\open-folder.PNG
-&lt;img src=&quot;/assets/image/open-folder.PNG&quot; alt=&quot;drawing&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/image/open-folder.PNG&quot; alt=&quot;open-folder&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위의 캡처와 같이 폴더 열기를 선택하여 &lt;strong&gt;md파일,이미지 파일을 모두 포함하는 상위 디렉토리를&lt;/strong&gt; 여는 경우 preview화면에서 보이지않는 이미지를 보이게 할 수 있습니다. vscode가 작업 영역을 상위 폴더까지 인식하게 되어 위의 문제를 해결 할 수 있습니다.&lt;/p&gt;
 
@@ -33,7 +32,7 @@
 &lt;h2 id=&quot;2git-로컬-저장소의-구조&quot;&gt;2.Git 로컬 저장소의 구조&lt;/h2&gt;
 &lt;p&gt;Git 로컬 저장소의 구조는 아래와 같습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/image/bundle-version.PNG&quot; alt=&quot;git local repo&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/image/Git-LocalRepo.PNG&quot; alt=&quot;git local repo&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;실제 작업이 이루어지는 Working directory,= Working tree,&lt;br /&gt;
 파일을 저장하는 준비를 하는 Staging area = index,&lt;br /&gt;
@@ -48,16 +47,16 @@ stage Area에 있는 파일을 commit하면 .git directory에 영구적으로 �
 
 &lt;p&gt;이를 해결하기 위해서 테마가 들어있는 폴더의 Gemfile.lock 파일을 열고 bundled with라고 적힌 문장을 찾아 버전을 확인합니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/image/bundle-version.PNG&quot; alt=&quot;drawing&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/image/bundle-version.PNG&quot; alt=&quot;bundle-version&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;그리고&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler -v 1.16.1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;처럼 해당 버전의 번들러를 설치해주시면 문제가 해결 됩니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyll 테마를 적용하다 보면 가끔 아래와 같은 에러가 발생하는 경우가 있습니다.</summary></entry><entry><title type="html">Gitpage Less(pager)</title><link href="http://localhost:4000/etc/2018/01/30/GitPage-less(pager).html" rel="alternate" type="text/html" title="Gitpage Less(pager)" /><published>2018-01-30T00:00:00+09:00</published><updated>2018-01-30T00:00:00+09:00</updated><id>http://localhost:4000/etc/2018/01/30/GitPage-less(pager)</id><content type="html" xml:base="http://localhost:4000/etc/2018/01/30/GitPage-less(pager).html">&lt;h1 id=&quot;문제-발생&quot;&gt;문제 발생&lt;/h1&gt;
+&lt;p&gt;처럼 해당 버전의 번들러를 설치해주시면 문제가 해결 됩니다.&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyll 테마를 적용하다 보면 가끔 아래와 같은 에러가 발생하는 경우가 있습니다.</summary></entry><entry><title type="html">Github 강제 병합, git less에서 나가기</title><link href="http://localhost:4000/etc/2018/01/30/GitPage-less(pager).html" rel="alternate" type="text/html" title="Github 강제 병합, git less에서 나가기" /><published>2018-01-30T00:00:00+09:00</published><updated>2018-01-30T00:00:00+09:00</updated><id>http://localhost:4000/etc/2018/01/30/GitPage-less(pager)</id><content type="html" xml:base="http://localhost:4000/etc/2018/01/30/GitPage-less(pager).html">&lt;h1 id=&quot;문제-발생&quot;&gt;문제 발생&lt;/h1&gt;
 
-&lt;h2 id=&quot;1github-page-에러-발생unrelated-history-문제&quot;&gt;1.Github page 에러 발생(unrelated history 문제)&lt;/h2&gt;
+&lt;h2 id=&quot;1github-에러-발생unrelated-history-문제&quot;&gt;1.Github 에러 발생(unrelated history 문제)&lt;/h2&gt;
 &lt;p&gt;Github page를 만들 때 원격 저장소를 먼저 만들었습니다.&lt;br /&gt;
 jekyll로 블로그 관련 폴더를 만든 후 그 폴더를 git로컬 저장소 지정하고 원격저장소에 push하는 경우 “Updates were rejected because the remote contains work that you do not have locally.” 에러가 발생합니다. 이는 로컬 저장소에 없는 작업을 원격 저장소가 가지고 있는 경우에 발생합니다.이는 보통의 경우 원격저장소를 pull하여 해결 할 수 있습니다.&lt;/p&gt;
 

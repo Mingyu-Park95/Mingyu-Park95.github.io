@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/authors/jill.html</loc>
-<lastmod>2019-04-21T10:01:12+09:00</lastmod>
+<lastmod>2019-04-21T10:45:34+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/park.html</loc>
-<lastmod>2019-04-21T10:01:12+09:00</lastmod>
+<lastmod>2019-04-21T10:45:34+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/ted.html</loc>
-<lastmod>2019-04-21T10:01:12+09:00</lastmod>
+<lastmod>2019-04-21T10:45:34+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/computers/2019-02-21-DataBase.html</loc>
@@ -167,10 +167,6 @@
 <url>
 <loc>http://localhost:4000/tils/2019-04-16-TIL.html</loc>
 <lastmod>2019-04-16T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/tils/2019-04-17-TIL.html</loc>
-<lastmod>2019-04-17T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tils/2019-04-18-TIL.html</loc>

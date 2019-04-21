@@ -1,11 +1,11 @@
 ---
-
+title : Github 강제 병합, git less에서 나가기
 categories: etc
 ---
 
 # 문제 발생 
 
-## 1.Github page 에러 발생(unrelated history 문제)  
+## 1.Github 에러 발생(unrelated history 문제)  
 Github page를 만들 때 원격 저장소를 먼저 만들었습니다.  
 jekyll로 블로그 관련 폴더를 만든 후 그 폴더를 git로컬 저장소 지정하고 원격저장소에 push하는 경우 "Updates were rejected because the remote contains work that you do not have locally." 에러가 발생합니다. 이는 로컬 저장소에 없는 작업을 원격 저장소가 가지고 있는 경우에 발생합니다.이는 보통의 경우 원격저장소를 pull하여 해결 할 수 있습니다.
 
