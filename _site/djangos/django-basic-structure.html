@@ -1,0 +1,69 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>django의 프로젝트 기본 뼈대</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="sidebar-sticky">
+    <h1>
+      <a href="/">Just Fun</a>
+    </h1>
+    <p class="greeting">
+      dev just Fun
+    </p>
+    <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item" href="/" >Home</a>
+        
+          <a class="sidebar-nav-item" href="/about.html" >About</a>
+        
+          <a class="sidebar-nav-item" href="/blog.html" >Blog</a>
+        
+          <a class="sidebar-nav-item" href="/til.html" >TIL</a>
+        
+          <a class="sidebar-nav-item" href="/staff.html" >Staff</a>
+        
+          <a class="sidebar-nav-item" href="/computer.html" >Computer</a>
+        
+          <a class="sidebar-nav-item" href="/django.html" >django</a>
+        
+    </nav>
+  </div>
+</div>
+    <div class="content-container">
+      <h1 class="page-title">django의 프로젝트 기본 뼈대</h1>
+<p>장고에서 프로젝트는 개발 대상이 되는 전체 프로그램을 의미하며, 애플리케이션의 경우 전체 프로그램을 기능으로 나눈 그룹들을 말합니다.
+이러한 애플리케이션을 모아 프로젝트 개발을 완성합니다. 이런 개념으로 프로젝트 디렉토리와 애플리케이션 디렉토리를 구분하고 코딩하는 파일도 프로젝트 파일인지
+애플리케이션 파일인지 구분해서 적절한 위치에 저장해야 합니다. 또한 애플리케이션의 경우 다른 프로젝트에서 재사용 할 수 있어 생산성이 높습니다.</p>
+
+<p>프로젝트의 최종적인 뼈대는 아래와 같습니다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;최상위 디렉토리명&gt;
+    - db.sqlite3 =&gt;SQLite3의 데이터베이스 파일입니다.
+    - manage.py  =&gt;장고의 명령어를 처리하는 파일입니다.
+    - &lt;프로젝트 명&gt; =&gt; 프로젝트 관련 파일이 들어있는 디렉토리입니다.
+        - __init__ =&gt; 파이썬이 이 폴더를 패키지로 인식하게 합니다.
+        - setting.py =&gt; 프로젝트 설정 파일 입니다.
+        - urls.py =&gt; 프로젝트 레벨의 URL 패턴을 정의하는 최상위 URLconf입니다.  
+                     보통 하위 어플리케이션 디렉토리 마다 urls.py파일이 있습니다.
+        - wsgi.py =&gt; WSGI 규격을 통해 웹 서버와 연동하기 위해 필요한 파일입니다.
+    - &lt;애플리케이션 명&gt;
+        - __init__
+        - admin.py =&gt; admin 사이트에 모델 클래스를 등록 해주는 파일입니다.
+        - models.py =&gt; 데이터베이스 모델 클래스를 정의하는 파일입니다.
+        - tests.py =&gt; 단위 테스트용 파일 입니다.
+        - views.py =&gt; 뷰 함수를 정의하는 파일 입니다. 함수형 뷰 및 클래스형 뷰 모두  
+                      이파일에 저장합니다.
+        - &lt;migrations&gt; =&gt; 데이터베이스 변경사항을 관리하기 위한 디렉토리 입니다.  
+          DB에 추가,삭제,변경 등이 발생하면 변경 내역을 기록한 파일들이 위치합니다.
+</code></pre></div></div>
+
+
+    </div>
+  </body>
+</html>
